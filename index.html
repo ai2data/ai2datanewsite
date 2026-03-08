@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Ai2Data Services — We design and implement AI-powered ecosystems: AI systems, data engineering, BI & analytics, enterprise applications, and workflow automation."/>
+  <meta name="keywords" content="AI services, data engineering, business intelligence, ERP, CRM, workflow automation, enterprise AI, agentic AI"/>
+  <title>Ai2Data Services | Intelligent AI, Data & Enterprise Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/Ai2Data.png" alt="Ai2Data Services" class="nav-logo-img"/>
+    </a>
+
+    <ul class="nav-links">
+      <li class="nav-dropdown">
+        <a href="#services" class="nav-link">Services ▾</a>
+        <div class="nav-dropdown-menu">
+          <a href="ai-services.html"><span class="dot"></span>AI &amp; Agentic Systems</a>
+          <a href="data-engineering.html"><span class="dot"></span>Data Engineering</a>
+          <a href="bi-analytics.html"><span class="dot"></span>BI &amp; Analytics</a>
+          <a href="business-operations.html"><span class="dot"></span>Business Operations</a>
+          <a href="workflow-automation.html"><span class="dot"></span>Workflow &amp; Automation</a>
+        </div>
+      </li>
+      <li><a href="about.html" class="nav-link">About</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Talk to an Expert</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="nav-mobile">
+  <a href="index.html">Home</a>
+  <a href="ai-services.html">AI &amp; Agentic Systems</a>
+  <a href="data-engineering.html">Data Engineering</a>
+  <a href="bi-analytics.html">BI &amp; Analytics</a>
+  <a href="business-operations.html">Business Operations</a>
+  <a href="workflow-automation.html">Workflow &amp; Automation</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary">Talk to an Expert</a>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home" aria-label="Hero">
+  <canvas id="hero-canvas" style="position:absolute;inset:0;width:100%;height:100%;"></canvas>
+  <div class="hero-gradient"></div>
+
+  <div class="container" style="position:relative;z-index:2;width:100%;">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        AI · Data · Enterprise Systems
+      </div>
+
+      <h1>
+        Transforming Business with<br>
+        <span class="accent">Intelligent AI,</span> Data<br>
+        &amp; Automation
+      </h1>
+
+      <p class="hero-sub">
+        We design and implement AI-powered ecosystems — from data foundations to enterprise
+        applications and intelligent agents — enabling measurable business impact.
+      </p>
+
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="width:18px;height:18px;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+          </svg>
+          Talk to an Expert
+        </a>
+        <a href="#services" class="btn btn-ghost">
+          Explore Our Services
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="width:16px;height:16px;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-num" data-count="50" data-suffix="+">50+</span>
+          <span class="hero-stat-label">Enterprise Clients</span>
+        </div>
+        <div>
+          <span class="hero-stat-num" data-count="200" data-suffix="+">200+</span>
+          <span class="hero-stat-label">Projects Delivered</span>
+        </div>
+        <div>
+          <span class="hero-stat-num" data-count="8" data-suffix="+">8+</span>
+          <span class="hero-stat-label">Countries</span>
+        </div>
+        <div>
+          <span class="hero-stat-num" data-count="99" data-suffix="%">99%</span>
+          <span class="hero-stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+    </svg>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ============================================================
+     STACK ARCHITECTURE
+     ============================================================ -->
+<section class="stack-section" id="stack" aria-labelledby="stack-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Architecture</span>
+      <h2 id="stack-title" class="section-title">Your End-to-End Intelligent<br>Business Stack</h2>
+      <p class="section-subtitle">
+        We integrate AI, data platforms, enterprise systems, and business applications into
+        one unified intelligent ecosystem — designed to scale with your ambitions.
+      </p>
+    </div>
+
+    <div class="stack-diagram reveal reveal-delay-1">
+      <!-- Top Layer: Applications -->
+      <div class="stack-layer stack-layer-top">
+        <div class="stack-layer-label">Applications Layer</div>
+        <div class="stack-chips">
+          <div class="stack-chip">BI &amp; Reporting</div>
+          <div class="stack-chip">Productivity Tools</div>
+          <div class="stack-chip">AI Agents</div>
+          <div class="stack-chip">3rd Party Apps</div>
+          <div class="stack-chip">Customer Portals</div>
+          <div class="stack-chip">Mobile Apps</div>
+        </div>
+      </div>
+
+      <div class="stack-arrows"><div class="stack-arrow"></div></div>
+
+      <!-- Middle Layer: Intelligence -->
+      <div class="stack-layer stack-layer-mid">
+        <div class="stack-layer-label">Intelligence Layer</div>
+        <div class="stack-chips">
+          <div class="stack-chip">AI Models &amp; LLMs</div>
+          <div class="stack-chip">Agentic Studio</div>
+          <div class="stack-chip">Workflow Orchestration</div>
+          <div class="stack-chip">Automation Engines</div>
+          <div class="stack-chip">RAG &amp; Vector Search</div>
+          <div class="stack-chip">ML Pipelines</div>
+        </div>
+      </div>
+
+      <div class="stack-arrows"><div class="stack-arrow"></div></div>
+
+      <!-- Core Layer -->
+      <div class="stack-layer stack-layer-core">
+        <div class="stack-layer-label">Core Infrastructure Layer</div>
+        <div class="stack-chips">
+          <div class="stack-chip">Cloud Data Warehousing</div>
+          <div class="stack-chip">Database Systems</div>
+          <div class="stack-chip">ERP &amp; Business Systems</div>
+          <div class="stack-chip">Multi-Cloud Infrastructure</div>
+          <div class="stack-chip">ITSM &amp; Workflow Mgmt</div>
+          <div class="stack-chip">Security &amp; Governance</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<div id="services">
+
+  <!-- SERVICE 1: AI -->
+  <section class="service-section" id="ai-services" aria-labelledby="ai-title">
+    <div class="container">
+      <div class="service-inner">
+        <div class="service-content reveal">
+          <div class="service-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/>
+            </svg>
+          </div>
+          <span class="section-label">AI &amp; Agentic Systems</span>
+          <h2 id="ai-title">Intelligent AI Built<br>for Enterprise Scale</h2>
+          <p>
+            We design intelligent AI systems tailored to your business — including custom models,
+            contextual generative AI, agentic workflows, and enterprise AI assistants that
+            deliver measurable impact.
+          </p>
+          <ul class="service-list">
+            <li class="service-list-item">Custom AI model development &amp; fine-tuning</li>
+            <li class="service-list-item">Agentic AI studio implementation</li>
+            <li class="service-list-item">Context-aware generative AI systems</li>
+            <li class="service-list-item">AI copilots for business teams</li>
+            <li class="service-list-item">Intelligent automation agents</li>
+          </ul>
+          <a href="ai-services.html" class="btn btn-primary">Build Your AI Strategy</a>
+        </div>
+
+        <div class="service-visual reveal reveal-delay-2">
+          <div class="service-card-visual">
+            <div class="service-card-glow"></div>
+            <span class="badge badge-orange" style="margin-bottom:1.5rem;">AI &amp; Machine Learning</span>
+            <div class="mini-stat">
+              <span class="mini-stat-num">10x</span>
+              <span class="mini-stat-label">faster decision cycles</span>
+            </div>
+            <div style="height:1px;background:var(--border);margin:1.25rem 0;"></div>
+            <p style="font-size:0.875rem;margin-bottom:1.25rem;">AI capabilities we deliver:</p>
+            <div class="visual-tags">
+              <span class="visual-tag">LLM Development</span>
+              <span class="visual-tag">RAG Systems</span>
+              <span class="visual-tag">AI Agents</span>
+              <span class="visual-tag">Fine-tuning</span>
+              <span class="visual-tag">MLOps</span>
+              <span class="visual-tag">NLP</span>
+              <span class="visual-tag">Computer Vision</span>
+              <span class="visual-tag">Predictive AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 2: DATA -->
+  <section class="service-section section-alt" id="data-services" aria-labelledby="data-title">
+    <div class="container">
+      <div class="service-inner reverse">
+        <div class="service-content reveal">
+          <div class="service-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <ellipse cx="12" cy="5" rx="9" ry="3" stroke-linecap="round"/>
+              <path stroke-linecap="round" d="M21 12c0 1.657-4.03 3-9 3S3 13.657 3 12"/>
+              <path stroke-linecap="round" d="M3 5v14c0 1.657 4.03 3 9 3s9-1.343 9-3V5"/>
+            </svg>
+          </div>
+          <span class="section-label">Data Management &amp; Engineering</span>
+          <h2 id="data-title">Modern Data Platforms<br>Built to Scale</h2>
+          <p>
+            We build scalable, secure, and modern data platforms that power analytics, AI,
+            and business systems — from cloud data warehouses to real-time streaming pipelines
+            and data governance frameworks.
+          </p>
+          <ul class="service-list">
+            <li class="service-list-item">Data architecture design &amp; strategy</li>
+            <li class="service-list-item">Data pipelines &amp; ETL/ELT development</li>
+            <li class="service-list-item">Cloud data lake &amp; warehouse implementation</li>
+            <li class="service-list-item">Cloud data modernization &amp; migration</li>
+            <li class="service-list-item">Data governance &amp; quality frameworks</li>
+          </ul>
+          <a href="data-engineering.html" class="btn btn-primary">Modernize Your Data Platform</a>
+        </div>
+
+        <div class="service-visual reveal reveal-delay-2">
+          <div class="service-card-visual">
+            <div class="service-card-glow"></div>
+            <span class="badge badge-blue" style="margin-bottom:1.5rem;">Cloud Data Platforms</span>
+            <div class="mini-stat">
+              <span class="mini-stat-num">500TB+</span>
+              <span class="mini-stat-label">data managed across clients</span>
+            </div>
+            <div style="height:1px;background:var(--border);margin:1.25rem 0;"></div>
+            <p style="font-size:0.875rem;margin-bottom:1.25rem;">Technologies we specialize in:</p>
+            <div class="visual-tags">
+              <span class="visual-tag">Snowflake</span>
+              <span class="visual-tag">Databricks</span>
+              <span class="visual-tag">BigQuery</span>
+              <span class="visual-tag">dbt</span>
+              <span class="visual-tag">Apache Spark</span>
+              <span class="visual-tag">Kafka</span>
+              <span class="visual-tag">Data Mesh</span>
+              <span class="visual-tag">Lakehouse</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 3: BI -->
+  <section class="service-section" id="bi-services" aria-labelledby="bi-title">
+    <div class="container">
+      <div class="service-inner">
+        <div class="service-content reveal">
+          <div class="service-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
+            </svg>
+          </div>
+          <span class="section-label">BI &amp; Analytics</span>
+          <h2 id="bi-title">Turn Raw Data into<br>Strategic Decisions</h2>
+          <p>
+            Turn raw data into strategic insight through modern BI dashboards, executive
+            reporting, and predictive analytics — giving every decision-maker the clarity
+            they need to act with confidence.
+          </p>
+          <ul class="service-list">
+            <li class="service-list-item">Executive dashboards &amp; C-suite reporting</li>
+            <li class="service-list-item">KPI frameworks &amp; metric alignment</li>
+            <li class="service-list-item">Advanced &amp; predictive analytics</li>
+            <li class="service-list-item">Self-service BI platforms</li>
+            <li class="service-list-item">Embedded analytics integration</li>
+          </ul>
+          <a href="bi-analytics.html" class="btn btn-primary">Unlock Business Insights</a>
+        </div>
+
+        <div class="service-visual reveal reveal-delay-2">
+          <div class="service-card-visual">
+            <div class="service-card-glow"></div>
+            <span class="badge badge-cyan" style="margin-bottom:1.5rem;">Business Intelligence</span>
+            <div class="mini-stat">
+              <span class="mini-stat-num">200+</span>
+              <span class="mini-stat-label">dashboards delivered</span>
+            </div>
+            <div style="height:1px;background:var(--border);margin:1.25rem 0;"></div>
+            <p style="font-size:0.875rem;margin-bottom:1.25rem;">BI platforms we implement:</p>
+            <div class="visual-tags">
+              <span class="visual-tag">Power BI</span>
+              <span class="visual-tag">Tableau</span>
+              <span class="visual-tag">Looker</span>
+              <span class="visual-tag">Qlik</span>
+              <span class="visual-tag">ThoughtSpot</span>
+              <span class="visual-tag">Sigma</span>
+              <span class="visual-tag">Metabase</span>
+              <span class="visual-tag">Superset</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 4: BUSINESS OPS -->
+  <section class="service-section section-alt" id="biz-services" aria-labelledby="biz-title">
+    <div class="container">
+      <div class="service-inner reverse">
+        <div class="service-content reveal">
+          <div class="service-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 2.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125m16.5 5.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/>
+            </svg>
+          </div>
+          <span class="section-label">Business Operations Software</span>
+          <h2 id="biz-title">Enterprise Applications<br>That Drive Results</h2>
+          <p>
+            We implement and integrate business-critical platforms for sales, finance, marketing,
+            and customer service — configuring them to your exact processes and connecting them
+            to your broader enterprise ecosystem.
+          </p>
+          <ul class="service-list">
+            <li class="service-list-item">CRM — Salesforce, Zoho, Dynamics 365</li>
+            <li class="service-list-item">ERP — SAP, Oracle, Microsoft D365</li>
+            <li class="service-list-item">Marketing automation platforms</li>
+            <li class="service-list-item">Customer service &amp; ITSM systems</li>
+            <li class="service-list-item">Financial systems &amp; integrations</li>
+          </ul>
+          <a href="business-operations.html" class="btn btn-primary">Optimize Your Operations</a>
+        </div>
+
+        <div class="service-visual reveal reveal-delay-2">
+          <div class="service-card-visual">
+            <div class="service-card-glow"></div>
+            <span class="badge badge-blue" style="margin-bottom:1.5rem;">Enterprise Applications</span>
+            <div class="mini-stat">
+              <span class="mini-stat-num">30%</span>
+              <span class="mini-stat-label">avg. operational efficiency gain</span>
+            </div>
+            <div style="height:1px;background:var(--border);margin:1.25rem 0;"></div>
+            <p style="font-size:0.875rem;margin-bottom:1.25rem;">Platforms we implement:</p>
+            <div class="visual-tags">
+              <span class="visual-tag">Salesforce</span>
+              <span class="visual-tag">Microsoft D365</span>
+              <span class="visual-tag">SAP</span>
+              <span class="visual-tag">Oracle</span>
+              <span class="visual-tag">Zoho</span>
+              <span class="visual-tag">HubSpot</span>
+              <span class="visual-tag">ServiceNow</span>
+              <span class="visual-tag">NetSuite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE 5: AUTOMATION -->
+  <section class="service-section" id="automation-services" aria-labelledby="auto-title">
+    <div class="container">
+      <div class="service-inner">
+        <div class="service-content reveal">
+          <div class="service-icon-wrap">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <span class="section-label">Workflow &amp; Automation</span>
+          <h2 id="auto-title">Automate the Work,<br>Amplify the Results</h2>
+          <p>
+            Automate complex business processes across departments using intelligent orchestration
+            and AI-powered workflows — eliminating manual effort and freeing your teams to focus
+            on higher-value work.
+          </p>
+          <ul class="service-list">
+            <li class="service-list-item">Cross-system workflow automation</li>
+            <li class="service-list-item">Business process optimization &amp; redesign</li>
+            <li class="service-list-item">ITSM integrations &amp; service automation</li>
+            <li class="service-list-item">Robotic Process Automation (RPA)</li>
+            <li class="service-list-item">Intelligent task routing &amp; orchestration</li>
+          </ul>
+          <a href="workflow-automation.html" class="btn btn-primary">Automate Your Business</a>
+        </div>
+
+        <div class="service-visual reveal reveal-delay-2">
+          <div class="service-card-visual">
+            <div class="service-card-glow"></div>
+            <span class="badge badge-blue" style="margin-bottom:1.5rem;">Process Automation</span>
+            <div class="mini-stat">
+              <span class="mini-stat-num">70%</span>
+              <span class="mini-stat-label">reduction in manual effort</span>
+            </div>
+            <div style="height:1px;background:var(--border);margin:1.25rem 0;"></div>
+            <p style="font-size:0.875rem;margin-bottom:1.25rem;">Automation tech we deploy:</p>
+            <div class="visual-tags">
+              <span class="visual-tag">UiPath</span>
+              <span class="visual-tag">Power Automate</span>
+              <span class="visual-tag">MuleSoft</span>
+              <span class="visual-tag">ServiceNow</span>
+              <span class="visual-tag">Boomi</span>
+              <span class="visual-tag">Apache Airflow</span>
+              <span class="visual-tag">Camunda</span>
+              <span class="visual-tag">AI Orchestration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end #services -->
+
+<!-- ============================================================
+     PLATFORM ECOSYSTEM
+     ============================================================ -->
+<section class="platforms-section" id="platforms" aria-labelledby="platforms-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Technology Partners</span>
+      <h2 id="platforms-title" class="section-title">Platforms We Work With</h2>
+      <p class="section-subtitle">
+        We are certified practitioners across the leading enterprise technology platforms — bringing
+        deep expertise and real-world implementation experience.
+      </p>
+    </div>
+  </div>
+
+  <div class="platforms-track">
+    <div class="platforms-scroll" role="list">
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">Microsoft</span>
+      </div>
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">Google Cloud</span>
+      </div>
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">Salesforce</span>
+      </div>
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">Oracle</span>
+      </div>
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">Databricks</span>
+      </div>
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">Snowflake</span>
+      </div>
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">Zoho</span>
+      </div>
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">AWS</span>
+      </div>
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">SAP</span>
+      </div>
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">Tableau</span>
+      </div>
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">Power BI</span>
+      </div>
+      <div class="platform-logo" role="listitem">
+        <span class="platform-logo-name">ServiceNow</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="cta-section" id="cta" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-box reveal">
+      <span class="section-label">Get Started</span>
+      <h2 id="cta-title">Ready to Build Your<br>Intelligent Enterprise?</h2>
+      <p>
+        Let's design a scalable AI-powered ecosystem tailored to your business goals.
+        From strategy to implementation — we're your end-to-end partner.
+      </p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">
+          Contact Ai2Data
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="width:16px;height:16px;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+          </svg>
+        </a>
+        <a href="about.html" class="btn btn-ghost">Learn About Us</a>
+      </div>
+
+      <!-- Trust signals -->
+      <div style="display:flex;align-items:center;justify-content:center;gap:1.5rem;flex-wrap:wrap;margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border);">
+        <span class="badge badge-blue">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="width:12px;height:12px;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          Response within 24hrs
+        </span>
+        <span class="badge badge-blue">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="width:12px;height:12px;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          No commitment required
+        </span>
+        <span class="badge badge-blue">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" style="width:12px;height:12px;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+          Enterprise-grade security
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo" style="margin-bottom:0.75rem;display:inline-flex;">
+          <img src="images/Ai2Data.png" alt="Ai2Data Services" class="footer-logo-img"/>
+        </a>
+        <p>
+          Intelligent AI, data, and enterprise systems that transform how businesses
+          operate and compete in the modern economy.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="social-icon" aria-label="LinkedIn">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="ai-services.html">AI &amp; Agentic Systems</a></li>
+          <li><a href="data-engineering.html">Data Engineering</a></li>
+          <li><a href="bi-analytics.html">BI &amp; Analytics</a></li>
+          <li><a href="business-operations.html">Business Operations</a></li>
+          <li><a href="workflow-automation.html">Workflow &amp; Automation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          <span>support@theai2data.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          <span>+91 99948 17615</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Ai2Data Services. All rights reserved.</p>
+      <p>Built for the intelligent enterprise.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

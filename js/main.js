@@ -72,7 +72,7 @@
   if (!canvas) return;
 
   const ctx = canvas.getContext('2d');
-  let animId, W, H, dots = [], lines = [];
+  let animId, W, H, dots = [];
 
   const COLORS = {
     dot:  'rgba(31, 160, 236, ',
@@ -241,4 +241,12 @@
   if (!scroll) return;
   const clone = scroll.innerHTML;
   scroll.innerHTML += clone;
+})();
+
+/* ---- Active nav link highlight ---- */
+(function () {
+  const page = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-link[href]').forEach(link => {
+    if (link.getAttribute('href') === page) link.classList.add('active');
+  });
 })();

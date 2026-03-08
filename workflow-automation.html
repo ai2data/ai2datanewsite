@@ -17,21 +17,27 @@
     <a href="index.html" class="nav-logo">
       <img src="images/Ai2Data.png" alt="Ai2Data Services" class="nav-logo-img"/>
     </a>
-    <ul class="nav-links">
+            <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="ai-services.html" class="nav-link">AI &amp; Agentic Systems</a></li>
       <li class="nav-dropdown">
-        <a href="#" class="nav-link">Services ▾</a>
+        <a href="#" class="nav-link">Data ▾</a>
         <div class="nav-dropdown-menu">
-          <a href="ai-services.html"><span class="dot"></span>AI &amp; Agentic Systems</a>
           <a href="data-engineering.html"><span class="dot"></span>Data Engineering</a>
           <a href="bi-analytics.html"><span class="dot"></span>BI &amp; Analytics</a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <a href="#" class="nav-link">Operations ▾</a>
+        <div class="nav-dropdown-menu">
           <a href="business-operations.html"><span class="dot"></span>Business Operations</a>
           <a href="workflow-automation.html"><span class="dot"></span>Workflow &amp; Automation</a>
         </div>
       </li>
-      <li><a href="about.html" class="nav-link">About</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
     </ul>
     <div class="nav-cta">
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
       <a href="contact.html" class="btn btn-primary">Talk to an Expert</a>
     </div>
     <button class="nav-toggle" aria-label="Toggle menu">
@@ -59,10 +65,10 @@
       <span class="breadcrumb-sep">›</span>
       <span>Workflow &amp; Automation</span>
     </nav>
-    <div class="hero-label">Workflow &amp; Automation</div>
-    <h1 class="page-hero-title">Automate the Work,<br>Amplify the Results</h1>
-    <p class="page-hero-sub">We design and implement intelligent automation across your business — eliminating manual effort, accelerating operations, and freeing your teams to focus on higher-value work.</p>
-    <div class="hero-actions">
+    <div class="page-hero-label reveal">Workflow &amp; Automation</div>
+    <h1 id="hero-heading" class="reveal reveal-delay-1">Automate the Work,<br>Amplify the Results</h1>
+    <p class="page-hero-sub reveal reveal-delay-2">We design and implement intelligent automation across your business — eliminating manual effort, accelerating operations, and freeing your teams to focus on higher-value work.</p>
+    <div class="page-hero-cta reveal reveal-delay-3">
       <a href="contact.html" class="btn btn-primary">Automate Your Business</a>
       <a href="index.html#services" class="btn btn-ghost">View All Services</a>
     </div>
@@ -133,11 +139,11 @@
 <!-- Section 2: Two-column -->
 <section class="section section-alt">
   <div class="container">
-    <div class="two-col-section">
+    <div class="two-col-layout">
 
       <div class="two-col-left reveal">
         <h2>Automation Technology Stack</h2>
-        <ul class="services-list">
+        <ul class="service-list">
           <li>UiPath, Automation Anywhere, Power Automate</li>
           <li>MuleSoft, Boomi, Zapier, Make</li>
           <li>ServiceNow, Jira Service Management</li>
@@ -151,14 +157,14 @@
 
       <div class="two-col-right reveal reveal-delay-1">
         <div class="highlight-card" style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2rem;">
-          <div class="mini-stats" style="display:flex; gap:2rem; margin-bottom:1.5rem;">
+          <div class="mini-stats">
             <div class="mini-stat">
-              <div class="stat-value" style="font-size:2.5rem; font-weight:800; color:var(--orange);">70%</div>
-              <div class="stat-label" style="font-size:0.85rem; color:var(--text-muted);">manual effort eliminated</div>
+              <span class="mini-stat-num">70%</span>
+              <span class="mini-stat-label">manual effort eliminated</span>
             </div>
             <div class="mini-stat">
-              <div class="stat-value" style="font-size:2.5rem; font-weight:800; color:var(--orange);">3x</div>
-              <div class="stat-label" style="font-size:0.85rem; color:var(--text-muted);">faster process cycles</div>
+              <span class="mini-stat-num">3x</span>
+              <span class="mini-stat-label">faster process cycles</span>
             </div>
           </div>
           <div class="visual-tags">
@@ -180,48 +186,48 @@
 <section class="section">
   <div class="container">
     <h2 class="section-title reveal">Our Automation Delivery</h2>
-    <div class="process-steps">
+    <ol class="process-steps" role="list">
 
-      <div class="process-step reveal">
-        <div class="step-number">01</div>
-        <div class="step-content">
+      <li class="process-step reveal">
+        <div class="process-step-number">01</div>
+        <div class="process-step-content">
           <h3>Process Discovery</h3>
           <p>Map current workflows, identify automation candidates, and calculate ROI potential using process mining tools.</p>
         </div>
-      </div>
+      </li>
 
-      <div class="process-step reveal reveal-delay-1">
-        <div class="step-number">02</div>
-        <div class="step-content">
+      <li class="process-step reveal reveal-delay-1">
+        <div class="process-step-number">02</div>
+        <div class="process-step-content">
           <h3>Automation Design</h3>
           <p>Design the target automation architecture with exception handling, monitoring, and escalation paths.</p>
         </div>
-      </div>
+      </li>
 
-      <div class="process-step reveal reveal-delay-2">
-        <div class="step-number">03</div>
-        <div class="step-content">
+      <li class="process-step reveal reveal-delay-2">
+        <div class="process-step-number">03</div>
+        <div class="process-step-content">
           <h3>Build &amp; Test</h3>
           <p>Develop automation scripts, bots, and workflows with comprehensive testing across edge cases.</p>
         </div>
-      </div>
+      </li>
 
-      <div class="process-step reveal reveal-delay-3">
-        <div class="step-number">04</div>
-        <div class="step-content">
+      <li class="process-step reveal reveal-delay-3">
+        <div class="process-step-number">04</div>
+        <div class="process-step-content">
           <h3>Deploy &amp; Monitor</h3>
           <p>Go live with full monitoring dashboards, alerting, and a bot operations framework for long-term reliability.</p>
         </div>
-      </div>
+      </li>
 
-    </div>
+    </ol>
   </div>
 </section>
 
 <!-- Final CTA -->
 <section class="section cta-section">
   <div class="container">
-    <div class="cta-block reveal">
+    <div class="cta-inner reveal">
       <h2>Ready to Automate Your Business?</h2>
       <p>Let's identify your highest-impact automation opportunities and build a roadmap to operational excellence.</p>
       <a href="contact.html" class="btn btn-primary">Start the Conversation</a>

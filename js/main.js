@@ -210,28 +210,42 @@
   sections.forEach(s => observer.observe(s));
 })();
 
-/* ---- Contact form ---- */
+/* ---- Contact form — EmailJS ---- */
 (function () {
   const form = document.getElementById('contact-form');
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  emailjs.init('Bk7J-VNoVf60Ct3a-');
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     const orig = btn.textContent;
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
-    setTimeout(() => {
-      btn.textContent = 'Message Sent!';
-      btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+    try {
+      const result = await emailjs.sendForm('service_oauoyqm', 'template_ntjidxo', form);
+      if (result.text === 'OK') {
+        btn.textContent = 'Message Sent!';
+        btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+        form.reset();
+        setTimeout(() => {
+          btn.textContent = orig;
+          btn.style.background = '';
+          btn.disabled = false;
+        }, 3000);
+      }
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      btn.textContent = 'Failed — Try Again';
+      btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
       setTimeout(() => {
         btn.textContent = orig;
         btn.style.background = '';
         btn.disabled = false;
-        form.reset();
       }, 3000);
-    }, 1200);
+    }
   });
 })();
 

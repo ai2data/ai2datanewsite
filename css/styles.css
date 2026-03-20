@@ -301,6 +301,17 @@ p  { color: var(--text-secondary); line-height: 1.75; }
   gap: 0.25rem;
 }
 
+.nav-chevron {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2px;
+  transition: transform 0.2s;
+}
+.nav-dropdown:hover .nav-chevron,
+.nav-dropdown:focus-within .nav-chevron {
+  transform: rotate(180deg);
+}
+
 .nav-link {
   padding: 0.5rem 0.85rem;
   border-radius: 6px;
@@ -636,6 +647,16 @@ p  { color: var(--text-secondary); line-height: 1.75; }
   transform: translateY(-4px);
   box-shadow: var(--shadow-glow);
 }
+
+.stack-layer-security {
+  background: linear-gradient(135deg, rgba(168,85,247,0.08), rgba(168,85,247,0.03));
+  border-color: rgba(168,85,247,0.3);
+  margin-bottom: 0.75rem;
+  z-index: 4;
+}
+.stack-layer-security .stack-layer-label { color: #a855f7; }
+.stack-layer-security .stack-layer-label::before { background: #a855f7; }
+.stack-layer-security .stack-chip { border-color: rgba(168,85,247,0.25); color: #a855f7; background: rgba(168,85,247,0.07); }
 
 .stack-layer-top {
   background: linear-gradient(135deg, rgba(26,143,227,0.08), rgba(26,143,227,0.03));
@@ -1025,13 +1046,17 @@ p  { color: var(--text-secondary); line-height: 1.75; }
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.25rem 2rem;
+  padding: 1rem 1.75rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 160px;
+  gap: 0.5rem;
+  min-width: 130px;
   transition: var(--transition);
 }
+
+.platform-logo svg { flex-shrink: 0; }
 
 .platform-logo:hover {
   border-color: var(--border-accent);
@@ -1041,13 +1066,14 @@ p  { color: var(--text-secondary); line-height: 1.75; }
 }
 
 .platform-logo-name {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-secondary);
-  letter-spacing: -0.01em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   transition: var(--transition);
 }
-.platform-logo:hover .platform-logo-name { color: var(--text-primary); }
+.platform-logo:hover .platform-logo-name { color: var(--text-secondary); }
 
 /* ============================================
    FINAL CTA SECTION
@@ -1658,6 +1684,17 @@ textarea.form-control {
   max-width: 620px;
   margin: 0 auto 2rem;
   line-height: 1.75;
+}
+
+/* Next steps section (Contact page) */
+.contact-next-steps {
+  margin-top: 2.5rem;
+}
+.contact-next-steps h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 /* Next steps list (Contact page) */

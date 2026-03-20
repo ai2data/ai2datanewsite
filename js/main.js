@@ -214,8 +214,9 @@
 (function () {
   const form = document.getElementById('contact-form');
   if (!form) return;
+  if (typeof emailjs === 'undefined') { console.warn('EmailJS not loaded'); return; }
 
-  emailjs.init('Bk7J-VNoVf60Ct3a-');
+  emailjs.init({ publicKey: 'Bk7J-VNoVf60Ct3a-' });
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -224,20 +225,29 @@
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
+    const data = new FormData(form);
+    const params = {
+      first_name:  data.get('first_name')  || '',
+      last_name:   data.get('last_name')   || '',
+      email:       data.get('email')       || '',
+      phone:       data.get('phone')       || '',
+      company:     data.get('company')     || '',
+      service:     data.get('service')     || '',
+      message:     data.get('message')     || '',
+    };
+
     try {
-      const result = await emailjs.sendForm('service_oauoyqm', 'template_ntjidxo', form);
-      if (result.text === 'OK') {
-        btn.textContent = 'Message Sent!';
-        btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
-        form.reset();
-        setTimeout(() => {
-          btn.textContent = orig;
-          btn.style.background = '';
-          btn.disabled = false;
-        }, 3000);
-      }
+      await emailjs.send('service_oauoyqm', 'template_ntjidxo', params);
+      btn.textContent = 'Message Sent!';
+      btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+      form.reset();
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
     } catch (err) {
-      console.error('EmailJS error:', err);
+      console.error('EmailJS error:', err.status, err.text, err);
       btn.textContent = 'Failed — Try Again';
       btn.style.background = 'linear-gradient(135deg, #ef4444, #dc2626)';
       setTimeout(() => {

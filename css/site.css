@@ -162,7 +162,7 @@ svg .pkt{fill:var(--accent)}
 svg .pkt-s{fill:var(--signal)}
 @media (prefers-reduced-motion: reduce){ svg .pkt, svg .pkt-s{display:none} }
 
-.ledger{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); border-top:1px solid var(--rule)}
+.ledger{display:grid; grid-template-columns:repeat(5, minmax(0,1fr)); border-top:1px solid var(--rule)}
 .ledger div{padding:22px 0 26px; display:grid; gap:4px}
 .ledger div + div{border-left:1px solid var(--rule); padding-left:24px}
 .ledger strong{font-family:var(--f-display); font-size:40px; font-weight:600; line-height:1; font-variant-numeric:tabular-nums}
@@ -172,7 +172,8 @@ svg .pkt-s{fill:var(--signal)}
 }
 @media (max-width: 640px){
   .ledger{grid-template-columns:repeat(2, minmax(0,1fr))}
-  .ledger div:nth-child(3){border-left:0; padding-left:0}
+  .ledger div:nth-child(3), .ledger div:nth-child(5){border-left:0; padding-left:0}
+  .ledger div:nth-child(5){grid-column:1 / -1}
   .ledger div:nth-child(n+3){border-top:1px solid var(--rule)}
   .schem-foot{grid-template-columns:1fr}
   .schem-foot div + div{border-left:0; border-top:1px solid var(--rule)}

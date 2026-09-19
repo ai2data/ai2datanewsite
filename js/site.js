@@ -57,8 +57,15 @@
       form.reset();
       say('Message sent. A senior consultant will reply within 24 hours.', 'ok');
     } catch (err) {
-      console.error('EmailJS error:', err && err.status, err && err.text, err);
-      say('Your message didn’t send. Check your connection and try again, or email support@theai2data.com.', 'err');
+      var status = err && err.status, text = (err && err.text) || (err && err.message) || '';
+      console.error('EmailJS error:', status, text, err);
+      if (!status) {
+        // Request never reached EmailJS: offline, or blocked by a browser extension (ad/privacy blockers often block api.emailjs.com).
+        say('Your message couldn’t reach our mail service. If you use an ad or privacy blocker, allow this site and try again — or email support@theai2data.com.', 'err');
+      } else {
+        // Full reason stays in the console; visitors get a short code they can quote.
+        say('Your message didn’t send (error ' + status + '). Please email support@theai2data.com or call +91 99948 17615 and we’ll respond within 24 hours.', 'err');
+      }
     } finally {
       btn.innerHTML = label;
       btn.disabled = false;

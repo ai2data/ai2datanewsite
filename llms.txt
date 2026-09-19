@@ -11,7 +11,7 @@ Key facts:
 - Platforms: Microsoft, Google Cloud, AWS, Salesforce, Oracle, Databricks, Snowflake, Zoho, SAP, Tableau, Power BI, ServiceNow
 - Trusted brands: Lakshmi Precision Technologies Limited; Libra Technical Maintenance Services LLC; Ficus Energy Oilfield Contracting LLC
 - Engagement model: deep-dive discovery → architecture and roadmap → build, test and ship → optimize and compound
-- Offer: new clients get a free 30-minute AI strategy call, no commitment
+- Offer: new clients get a free 60-minute AI strategy call, no commitment
 - Contact: support@theai2data.com, +91 99948 17615 (a senior consultant replies within 24 hours)
 
 ## Practices
@@ -26,4 +26,4 @@ Key facts:
 
 - [Home](https://www.theai2data.com/): overview, reference architecture and practices
 - [About](https://www.theai2data.com/about.html): mission, values, trusted brands and common questions
-- [Contact](https://www.theai2data.com/contact.html): book a free 30-minute AI strategy call (new clients)
+- [Contact](https://www.theai2data.com/contact.html): book a free 60-minute AI strategy call (new clients)

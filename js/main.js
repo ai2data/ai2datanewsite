@@ -75,8 +75,8 @@
   let animId, W, H, dots = [];
 
   const COLORS = {
-    dot:  'rgba(31, 160, 236, ',
-    line: 'rgba(31, 160, 236, ',
+    dot:  'rgba(139, 92, 246, ',
+    line: 'rgba(139, 92, 246, ',
     grid: 'rgba(255, 255, 255, '
   };
 
@@ -272,5 +272,19 @@
   const page = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-link[href]').forEach(link => {
     if (link.getAttribute('href') === page) link.classList.add('active');
+  });
+})();
+
+/* ---- Scroll to top ---- */
+(function () {
+  const btn = document.getElementById('scroll-top');
+  if (!btn) return;
+
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 })();

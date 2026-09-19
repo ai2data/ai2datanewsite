@@ -1,0 +1,28 @@
+# Ai2Data Services
+
+> Ai2Data Services designs and implements AI-powered ecosystems — AI agents, modern data platforms, business intelligence and enterprise systems — built as one unified stack, from strategy to production. Founded in 2020, Ai2Data has delivered 200+ projects across 8+ countries.
+
+Ai2Data works across five practices and a four-tier "knowledge layer" reference architecture: governed data products, an ontology and knowledge graph, AI models with retrieval-augmented generation (RAG) and agents, and a semantic model with business context. Security and governance apply at every layer.
+
+Key facts:
+- Company: Ai2Data Services (also "Ai2Data"), founded 2020
+- Scale: 200+ projects, 8+ countries, 30+ certifications, 12 technology platforms
+- Industries: financial services, healthcare and life sciences, manufacturing, retail and e-commerce, technology, energy and utilities
+- Platforms: Microsoft, Google Cloud, AWS, Salesforce, Oracle, Databricks, Snowflake, Zoho, SAP, Tableau, Power BI, ServiceNow
+- Trusted brands: Lakshmi Precision Technologies Limited; Libra Technical Maintenance Services LLC; Ficus Energy Oilfield Contracting LLC
+- Engagement model: deep-dive discovery → architecture and roadmap → build, test and ship → optimize and compound
+- Contact: support@theai2data.com, +91 99948 17615 (a senior consultant replies within 24 hours)
+
+## Practices
+
+- [AI & Agentic Systems](https://www.theai2data.com/ai-services.html): custom LLMs, RAG, autonomous agent orchestration, enterprise GenAI, in-app copilots, AI guardrails and compliance
+- [Data Engineering](https://www.theai2data.com/data-engineering.html): lakehouse and data-mesh architecture, ETL/ELT and real-time streaming pipelines, cloud data warehousing, data governance and quality
+- [BI & Analytics](https://www.theai2data.com/bi-analytics.html): executive dashboards, KPI frameworks, self-service BI, predictive and prescriptive analytics, embedded analytics
+- [Business Operations Software](https://www.theai2data.com/business-operations.html): CRM, ERP, marketing, customer service and finance platforms, and the integrations between them
+- [Workflow & Automation](https://www.theai2data.com/workflow-automation.html): RPA, workflow orchestration, ITSM automation, API integration and iPaaS, intelligent document processing
+
+## Company
+
+- [Home](https://www.theai2data.com/): overview, reference architecture and practices
+- [About](https://www.theai2data.com/about.html): mission, values, trusted brands and common questions
+- [Contact](https://www.theai2data.com/contact.html): book a strategy call

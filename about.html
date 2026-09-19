@@ -77,7 +77,14 @@
       "English"
      ]
     }
-   ]
+   ],
+   "makesOffer": {
+    "@type": "Offer",
+    "name": "Free 30-minute AI strategy call for new clients",
+    "price": "0",
+    "description": "New clients get their first 30-minute AI strategy call free, with no commitment.",
+    "url": "https://www.theai2data.com/contact.html"
+   }
   },
   {
    "@type": "AboutPage",
@@ -156,6 +163,14 @@
     },
     {
      "@type": "Question",
+     "name": "Is the first strategy call free?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. New clients get a free 30-minute AI strategy call to map goals, gaps and quick wins, with no commitment. Book it from the contact page or email support@theai2data.com."
+     }
+    },
+    {
+     "@type": "Question",
      "name": "How do I get in touch with Ai2Data?",
      "acceptedAnswer": {
       "@type": "Answer",
@@ -171,9 +186,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&amp;display=swap"/>
-  <link rel="stylesheet" href="css/site.css?v=11"/>
+  <link rel="stylesheet" href="css/site.css?v=12"/>
 </head>
 <body>
+<div class="promo" id="promo" role="region" aria-label="Offer">
+  <p><b>New to Ai2Data?</b> Your first 30-minute AI strategy call is free. <a href="contact.html?offer=free-call#contact-form-section">Book yours <span aria-hidden="true">→</span></a></p>
+  <button class="promo-x" type="button" aria-label="Dismiss offer">×</button>
+</div>
 
 <header class="site-head">
   <div class="wrap head-row">
@@ -313,6 +332,7 @@
         <details class="faq-item"><summary>Which platforms does Ai2Data work with?</summary><p>Microsoft, Google Cloud, AWS, Salesforce, Oracle, Databricks, Snowflake, Zoho, SAP, Tableau, Power BI and ServiceNow, among others.</p></details>
         <details class="faq-item"><summary>Which industries does Ai2Data serve?</summary><p>Financial services, healthcare and life sciences, manufacturing, retail and e-commerce, technology, and energy and utilities.</p></details>
         <details class="faq-item"><summary>How does an engagement with Ai2Data work?</summary><p>Every engagement follows four phases: deep-dive discovery, architecture and roadmap, build, test and ship, then optimize and compound — monitoring, retraining models and expanding coverage after launch.</p></details>
+        <details class="faq-item"><summary>Is the first strategy call free?</summary><p>Yes. New clients get a free 30-minute AI strategy call to map goals, gaps and quick wins, with no commitment. Book it from the contact page or email support@theai2data.com.</p></details>
         <details class="faq-item"><summary>How do I get in touch with Ai2Data?</summary><p>Email support@theai2data.com or call +91 99948 17615. A senior consultant replies within 24 hours, and no commitment is required.</p></details>
       </div>
     </div>
@@ -327,10 +347,11 @@
       </div>
       <div class="cta-side">
         <div class="hero-actions">
-          <a class="btn btn-primary" href="contact.html">Book a strategy call <span class="arr">→</span></a>
+          <a class="btn btn-primary" href="contact.html">Book a free strategy call <span class="arr">→</span></a>
           <a class="btn btn-ghost" href="about.html">Learn about us</a>
         </div>
         <ul class="assure">
+          <li><span>Strategy call</span><span>free for new clients</span></li>
           <li><span>Response</span><span>within 24 hrs</span></li>
           <li><span>Commitment</span><span>none required</span></li>
           <li><span>Security</span><span>enterprise-grade</span></li>
@@ -379,6 +400,6 @@
     </div>
   </div>
 </footer>
-<script src="js/site.js?v=11" defer></script>
+<script src="js/site.js?v=12" defer></script>
 </body>
 </html>

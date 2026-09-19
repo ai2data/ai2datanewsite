@@ -504,3 +504,17 @@ svg .bracket{fill:none; stroke:var(--rule-strong); stroke-width:1.2}
 .faq-item[open] summary::after{transform:rotate(45deg)}
 .faq-item summary:hover{color:var(--accent)}
 .faq-item p{margin:0 0 18px; color:var(--muted); max-width:62ch}
+
+/* free strategy call offer */
+.promo{position:relative; background:var(--brand-grad); color:#FFFFFF; padding:9px 48px; text-align:center; font-size:14px; line-height:1.4}
+.promo[hidden]{display:none}
+.promo p{margin:0}
+.promo b{font-weight:600}
+.promo a{color:#FFFFFF; font-weight:600; text-underline-offset:3px; margin-left:4px; white-space:nowrap}
+.promo a:hover{text-decoration-thickness:2px}
+.promo-x{position:absolute; right:10px; top:50%; transform:translateY(-50%); width:30px; height:30px; border:0; border-radius:50%; background:transparent; color:#FFFFFF; font-size:20px; line-height:1; cursor:pointer}
+.promo-x:hover{background:rgba(255,255,255,.18)}
+.promo-x:focus-visible, .promo a:focus-visible{outline:2px solid #FFFFFF; outline-offset:2px}
+.offer-note{margin:0; font-size:14px; color:var(--muted)}
+.offer-note::before{content:""; display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--teal); margin-right:8px; vertical-align:1px}
+@media (max-width: 560px){ .promo{padding:9px 44px 9px 16px; text-align:left; font-size:13px} }

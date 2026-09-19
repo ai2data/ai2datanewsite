@@ -17,6 +17,24 @@
   nav.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
 })();
 
+/* Free strategy call offer: dismissible bar, and pre-select the offer on the contact form */
+(function () {
+  var bar = document.getElementById('promo');
+  var KEY = 'ai2data-promo-dismissed';
+  if (bar) {
+    try { if (localStorage.getItem(KEY) === '1') bar.hidden = true; } catch (e) {}
+    var x = bar.querySelector('.promo-x');
+    if (x) x.addEventListener('click', function () {
+      bar.hidden = true;
+      try { localStorage.setItem(KEY, '1'); } catch (e) {}
+    });
+  }
+  var select = document.getElementById('service');
+  if (select && /[?&]offer=free-call\b/.test(window.location.search)) {
+    select.value = 'free-strategy-call';
+  }
+})();
+
 /* Contact form — EmailJS */
 (function () {
   var form = document.getElementById('contact-form');
